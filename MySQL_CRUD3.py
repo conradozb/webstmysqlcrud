@@ -18,7 +18,7 @@ st.image('ERDcompanydata.png')
 # especificada en archivo secrets.toml
 #'C:\\Users\\conza\\WEB\\StreamlitKhorasani\\Chapter_5\\.streamlit\\secrets.toml'
 def init_connection():
-    return pymysql.connect(**st.secrets["mysql"])
+    return pymysql.connect(**st.secrets["database"])
 
 # llama funcion de conexion y la regresa a la variable "conn"
 conn = init_connection()
