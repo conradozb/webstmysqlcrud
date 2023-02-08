@@ -11,8 +11,8 @@ st.markdown("Esta Streamlit app permite la Insercion(Create),\
                     de una BD(companydata)")
                     
 st.image('ERDcompanydata.png')
-@st.cache(allow_output_mutation=True,
-          hash_funcs={"_thread.RLock": lambda _: None})
+#@st.cache(allow_output_mutation=True,
+#          hash_funcs={"_thread.RLock": lambda _: None})
 
 # proceso para establecer conexion con mysql y la bd
 # especificada en archivo secrets.toml
