@@ -1,7 +1,7 @@
 import streamlit as st
-import pymysql
+#import pymysql
 import pandas as pd
-
+import mysql-connector
 
 st.title("CRUD v3 en tablas de MySQL v8") 
 
@@ -18,7 +18,8 @@ st.image('ERDcompanydata.png')
 # especificada en archivo secrets.toml
 #'C:\\Users\\conza\\WEB\\StreamlitKhorasani\\Chapter_5\\.streamlit\\secrets.toml'
 def init_connection():
-    return pymysql.connect(**st.secrets["mysql"])
+    #return pymysql.connect(**st.secrets["mysql"])
+    return mysql-connector.connect(**st.secrets["mysql"])
 
 # llama funcion de conexion y la regresa a la variable "conn"
 conn = init_connection()
